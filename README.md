@@ -45,7 +45,7 @@ Offers real-time insights into player behavior and automated crash reporting.
 ## ⚙️ Setup Instructions
 
 ### Step 1: Create Unity Project  
-1. Open Unity Hub.(images/unity_hub_dash.png)  
+1. Open Unity Hub.![Unity Dashboard Screenshot](images/unity_hub_dash.png)  
 2. Click **New Project**, choose a 2D or 3D template.  
 3. Name it (e.g., `UnityCloudDemo`) and click **Create**.
 
