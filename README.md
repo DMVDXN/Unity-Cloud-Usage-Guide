@@ -46,7 +46,8 @@ Offers real-time insights into player behavior and automated crash reporting.
 
 ### Step 1: Create Unity Project  
 1. Open Unity Hub.![Unity Dashboard Screenshot](images/unity_hub_dash.png)  
-2. Click **New Project**, choose a 2D or 3D template.[Unity new project Screenshot](images/new_project.png)  
+2. Click **New Project**, choose a 2D or 3D template.![Unity new project Screenshot](images/new_project.png)
+  *make sure to enable "Use Unity Version Control" as well as "Respository details" and name your project repository*  
 3. Name it (e.g., `UnityCloudDemo`) and click **Create**.
 
 ### Step 2: Activate Unity Services  
