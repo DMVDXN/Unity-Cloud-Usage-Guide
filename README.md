@@ -1,101 +1,175 @@
-# Unity Cloud Usage Guide  
-Daniel Onyejiekwe | June 2025
+# ☁️ Unity Cloud Services Setup & Guide
 
-# ☁️ Unity Cloud Guide & Setup Instructions
+**Author:** Daniel Onyejiekwe  
+**Date:** June 2025
 
-This README provides an overview of **Unity Cloud** and detailed instructions on how to use key features such as **Unity Cloud Build**, **Unity Version Control (Plastic SCM)**, and the **Unity Dashboard** for project collaboration and deployment.
-
----
-
-## 📌 What is Unity Cloud?
-
-Unity Cloud is a suite of tools integrated into the Unity ecosystem that supports:
-
-- ✅ Version Control (via Unity Version Control / Plastic SCM)
-- ✅ Cloud Build (automated builds for multiple platforms)
-- ✅ Collaborator access and project hosting
-- ✅ Integration with Unity Dashboard for analytics, services, and more
+This document provides a comprehensive overview and setup guide for Unity Cloud Services, including testing insights, troubleshooting, and best practices. It's written to help Unity developers streamline their workflow using Unity’s integrated cloud tools.
 
 ---
 
-## 🛠️ Features of Unity Cloud
+## 📌 Table of Contents
 
-| Feature             | Description |
-|---------------------|-------------|
-| **Cloud Build**      | Automatically compiles and builds your Unity project in the cloud |
-| **Version Control**  | Allows teams to manage source code and assets with Plastic SCM |
-| **Unity Dashboard**  | Centralized hub to manage builds, services, and collaborators |
-| **Crash & Analytics**| Monitor performance, errors, and usage across devices |
-
----
-
-## 🚀 How to Use Unity Cloud
-
-### 1. 🔗 Link Your Project to Unity Cloud
-
-- Open Unity Hub
-- Click on your project > **Cloud Services**
-- Click **Set Up Services**
-- Unity will ask you to create or link to a Unity Organization
+- [Overview](#overview)
+- [Core Services Explained](#core-services-explained)
+- [Setup Instructions](#setup-instructions)
+- [Enable Version Control (Step 5)](#-enable-version-control-step-5)
+- [Best Practices](#-best-practices)
+- [Troubleshooting](#-troubleshooting)
+- [Screenshots](#-screenshots)
+- [Conclusion](#-conclusion)
 
 ---
 
-### 2. 💾 Enable Unity Version Control (Plastic SCM)
+## 🧠 Overview
 
-1. Go to the Unity Dashboard: [https://dashboard.unity3d.com](https://dashboard.unity3d.com)
-2. Select your project > Version Control
-3. Follow prompts to set up Plastic SCM
-4. From Unity Editor:  
-   - Go to **Window > Version Control**
-   - Sign in and sync changes
+Unity Cloud Services offer cloud-based tools to help developers build, deploy, and manage Unity projects with greater efficiency and collaboration. These services include automated builds, cloud saves, version control, and performance analytics.
 
 ---
 
-### 3. ⚙️ Set Up Unity Cloud Build
+## 🔍 Core Services Explained
 
-1. In Unity Dashboard, click **Cloud Build**
-2. Select your repository (GitHub, GitLab, or Unity Version Control)
-3. Choose target platforms (e.g., Android, Windows)
-4. Set build triggers: on push, manual, or scheduled
-5. Click **Build Now** to start
+### 🚀 Cloud Build  
+Unity Cloud Build automates game builds for multiple platforms. After pushing changes to your repository, Unity Cloud compiles your game remotely and notifies you when it’s done.
 
-You’ll receive download links for the built `.apk` or `.exe` when it finishes.
+### 💾 Cloud Save  
+Allows developers to store and sync user data (like game progress or settings) to the cloud across multiple devices.
 
----
+### 🧩 Unity DevOps  
+**Version Control (Plastic SCM)** and **Build Automation** enable teams to collaborate in real-time and ship code with confidence.
 
-### 4. 👥 Add Team Members
-
-- Go to **Dashboard > Organizations > Members**
-- Invite team members via email
-- Assign roles: Owner, Manager, Developer, etc.
+### 📊 Cloud Diagnostics and Analytics  
+Offers real-time insights into player behavior and automated crash reporting.
 
 ---
 
-### 5. 📈 Access Analytics & Services
+## ⚙️ Setup Instructions
 
-- From Dashboard > Services
-- Enable crash reports, in-app purchasing, remote config, etc.
+### Step 1: Create Unity Project  
+1. Open Unity Hub.(images/unity_hub_dash.png)  
+2. Click **New Project**, choose a 2D or 3D template.  
+3. Name it (e.g., `UnityCloudDemo`) and click **Create**.
+
+### Step 2: Activate Unity Services  
+1. In Unity, go to `Window > Services`.  
+2. Sign in and create a Project ID if needed.  
+3. Enable:  
+   - Cloud Build  
+   - Cloud Save  
+   - Cloud Diagnostics  
+   - Analytics  
+
+### Step 3: Configure Cloud Build  
+1. Visit [Unity Cloud Dashboard](https://cloud.unity.com/build).  
+2. Link your Unity project and connect your GitHub/GitLab repo.  
+3. Create a build target (e.g., Android, WebGL).  
+4. Set build triggers (e.g., on every push to `main`).
+
+### Step 4: Set Up Cloud Save  
+1. In Unity, go to `Window > Services > Cloud Save`.  
+2. Enable the service.  
+3. Example test code:
+   ```csharp
+   using Unity.Services.CloudSave;
+   await CloudSaveService.Instance.Data.ForceSaveAsync();
+
+## 🔐 Enable Version Control (Step 5)
+
+### Option A: Plastic SCM
+
+1. Go to **Unity Dashboard > DevOps > Version Control**.  
+2. Create or link an organization.  
+3. Install the Unity Version Control plugin (Plastic SCM).
+
+### Option B: Git
+
+1. Use your Git provider (e.g., GitHub, GitLab).  
+2. Add a `.gitignore` file to exclude the following folders:
+
+    ```
+    Library/
+    Temp/
+    Builds/
+    ```
 
 ---
 
-## 🧭 Tips for Navigating Unity Cloud
+## 💡 Best Practices
 
-- Use the Unity Dashboard for a **centralized view** of your project’s build history, team access, analytics, and cloud services.
-- Use Unity Hub to **easily open and manage projects** linked with Unity Cloud.
-- Keep branches clean for smoother **cloud builds**.
+- ✅ Always enable **Collaborators** in your Unity Organization settings.  
+- ✅ Use **environment variables** in build scripts for secrets and API keys.  
+- ✅ Test **Cloud Save** functionality using development builds first.  
+- ✅ Separate build targets for **staging** and **production** environments.  
+- ✅ Regularly monitor **Cloud Diagnostics** for crash patterns.
+
+## 🧯 Troubleshooting
+
+| Issue                     | Solution                                                        |
+|---------------------------|-----------------------------------------------------------------|
+| Builds not triggering      | Ensure correct Git branch is linked and push includes new changes |
+| Cloud Save errors          | Check internet connection and ensure Unity Authentication is enabled |
+| Version control conflict   | Use lock rules or communicate with team before overwriting shared assets |
+| Cloud Build stuck at “queued” | Free plan may delay builds during peak times                  |
+
+## 🖼️ Screenshots
+
+*(Include these in your final version)*
+
+- Unity Dashboard showing Cloud Build targets  
+  ![Unity Dashboard](path/to/unity_dashboard_screenshot.png)  
+
+- In-Editor Service Panel with Cloud Save enabled  
+  ![Cloud Save Panel](path/to/cloud_save_panel_screenshot.png)  
+
+- Cloud Diagnostics console  
+  ![Cloud Diagnostics](path/to/cloud_diagnostics_screenshot.png)  
+
+- Sample success build email notification  
+  ![Build Success Email](path/to/build_success_email.png)  
 
 ---
 
-## 📚 Resources
+## 💰 Pricing
 
-- [Unity Cloud Documentation](https://docs.unity.com/cloud-build)
-- [Unity Version Control](https://unity.com/releases/version-control)
-- [Unity Dashboard](https://dashboard.unity3d.com)
+Unity Cloud Services offer different plans depending on your project's scale and requirements. Here is a general overview:
+
+- **Free Plan**  
+  - Limited number of Cloud Build minutes per month  
+  - Basic Cloud Save storage quota  
+  - Access to core features with usage caps  
+  - Suitable for small projects or individual developers  
+
+- **Plus and Pro Plans**  
+  - Increased build minutes and storage limits  
+  - Priority build queues  
+  - Advanced analytics and diagnostics  
+  - Access to collaboration features with more users  
+  - Ideal for teams and larger projects  
+
+- **Enterprise Plans**  
+  - Custom pricing based on scale and support needs  
+  - Dedicated support and SLAs  
+  - Advanced security and compliance options  
+
+**Note:** Pricing and limits can change; always check the [official Unity Cloud pricing page](https://unity.com/pricing) for the latest details.
+
+Unity Cloud Services pricing varies by plan and usage. Below is an approximate summary:
+
+| Plan        | Cost (USD)          | Cloud Build Minutes     | Cloud Save Storage          | Notes                              |
+|-------------|---------------------|------------------------|----------------------------|-----------------------------------|
+| **Free**    | $0/month            | 60 build minutes/month | 1 GB storage               | Basic features, ideal for small projects or individual developers |
+| **Plus**    | $15/month           | 120 build minutes/month| 5 GB storage               | Priority build queue, more storage, collaboration for small teams |
+| **Pro**     | $40/month           | 180 build minutes/month| 20 GB storage              | Advanced analytics, higher quotas, ideal for medium to large teams |
+| **Enterprise** | Custom pricing    | Custom                 | Custom                     | Dedicated support, SLAs, compliance, for large-scale production teams |
+
+> **Note:**  
+> - Additional build minutes and storage can be purchased as add-ons.  
+> - Pricing may vary based on region and contract terms.  
+> - Always refer to the official [Unity Pricing Page](https://unity.com/pricing) for the most current info.
 
 ---
 
-## 👨‍💻 Author
+---
 
-- Daniel Onyejiekwe  
-- Task: Research Unity Cloud and document navigation + usage
+## 🧾 Conclusion
 
+Unity Cloud Services simplify development workflows by handling builds, syncing data, and managing version control through a unified interface. Based on testing, the setup process is straightforward, but some services may require additional permissions or API calls.
