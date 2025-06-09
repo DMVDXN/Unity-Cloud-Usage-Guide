@@ -1,5 +1,10 @@
 # ☁️ Unity Cloud Services Setup & Guide
 
+> ⚠️ **Editor Compatibility Notice**  
+> The ability to follow the steps in this README may vary depending on the version of the Unity Editor being used.  
+> Before utilizing this guide, your development team must **agree on a specific Unity version** to ensure consistency and avoid compatibility issues.  
+> Features and workflows may differ across versions.
+
 **Author:** Daniel Onyejiekwe  
 **Date:** June 2025
 
@@ -45,8 +50,14 @@ Offers real-time insights into player behavior and automated crash reporting.
 ## ⚙️ Setup Instructions
 
 ### Step 1: Create Unity Project  
-1. Open Unity Hub.![Unity Dashboard Screenshot](images/unity_hub_dash.png)  
-2. Click **New Project**, choose a 2D or 3D template.![Unity new project Screenshot](images/new_project.png)
+1. Open Unity Hub. 
+
+   <img src="images/unity_hub_dash.png" alt="Unity Dashboard Screenshot" width="800"/>
+
+2. Click **New Project**, choose a 2D or 3D template.
+
+   <img src="images/new_project.png" alt="Unity new project Screenshot" width="800"/>
+
   *make sure to enable "Use Unity Version Control" as well as "Respository details" and name your project repository*  
 3. Name it (e.g., `UnityCloudDemo`) and click **Create**.
 
@@ -60,13 +71,18 @@ Offers real-time insights into player behavior and automated crash reporting.
    - Analytics  
 
 ### Step 3: Configure Cloud Build  
-1. Visit [Unity Cloud Dashboard](https://cloud.unity.com/build).  
+1. Visit [Unity Cloud Dashboard](https://cloud.unity.com/build). 
+
+   <img src="images/unity_cloud_dash.png" alt="Unity cloud Dashboard Screenshot" width="800"> 
+
 2. Link your Unity project and connect your GitHub/GitLab repo.  
 3. Create a build target (e.g., Android, WebGL).  
 4. Set build triggers (e.g., on every push to `main`).
 
 ### Step 4: Set Up Cloud Save  
-1. In Unity, go to `Window > Services > Cloud Save`.  
+1. In Unity, go to `Window > Services > Cloud Save`. 
+
+   (*Beware the current version of Unity in use might change the order of operations in order to complete this process*)
 2. Enable the service.  
 3. Example test code:
    ```csharp
@@ -77,8 +93,14 @@ Offers real-time insights into player behavior and automated crash reporting.
 
 ### Option A: Plastic SCM
 
-1. Go to **Unity Dashboard > DevOps > Version Control**.  
+1. Go to **Unity Dashboard > DevOps > Version Control**.
+
+   <img src="images/unity_devops_dash.png" alt="Unity DevOps Dashboard Screenshot" width="800">
+
 2. Create or link an organization.  
+
+   <img src= "images/organization_dash.png" alt="Organization dashboard" width= "800">
+
 3. Install the Unity Version Control plugin (Plastic SCM).
 
 ### Option B: Git
@@ -151,6 +173,8 @@ Unity Cloud Services offer different plans depending on your project's scale and
   - Dedicated support and SLAs  
   - Advanced security and compliance options  
 
+*In the context of Unity's Build Automation service, "build minutes" refer to the time your project spends being processed by Unity's cloud servers during a build. These minutes are used to calculate your billable usage and determine whether you are exceeding any allocated limits.* 
+
 **Note:** Pricing and limits can change; always check the [official Unity Cloud pricing page](https://unity.com/pricing) for the latest details.
 
 Unity Cloud Services pricing varies by plan and usage. Below is an approximate summary:
@@ -162,7 +186,7 @@ Unity Cloud Services pricing varies by plan and usage. Below is an approximate s
 | **Pro**     | $40/month           | 180 build minutes/month| 20 GB storage              | Advanced analytics, higher quotas, ideal for medium to large teams |
 | **Enterprise** | Custom pricing    | Custom                 | Custom                     | Dedicated support, SLAs, compliance, for large-scale production teams |
 
-> **Note:**  
+> **Note:** 
 > - Additional build minutes and storage can be purchased as add-ons.  
 > - Pricing may vary based on region and contract terms.  
 > - Always refer to the official [Unity Pricing Page](https://unity.com/pricing) for the most current info.
