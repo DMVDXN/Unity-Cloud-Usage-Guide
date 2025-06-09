@@ -46,7 +46,7 @@ Offers real-time insights into player behavior and automated crash reporting.
 
 ### Step 1: Create Unity Project  
 1. Open Unity Hub.![Unity Dashboard Screenshot](images/unity_hub_dash.png)  
-2. Click **New Project**, choose a 2D or 3D template.  
+2. Click **New Project**, choose a 2D or 3D template.[Unity new project Screenshot](images/new_project.png)  
 3. Name it (e.g., `UnityCloudDemo`) and click **Create**.
 
 ### Step 2: Activate Unity Services  
@@ -100,6 +100,7 @@ Offers real-time insights into player behavior and automated crash reporting.
 - ✅ Test **Cloud Save** functionality using development builds first.  
 - ✅ Separate build targets for **staging** and **production** environments.  
 - ✅ Regularly monitor **Cloud Diagnostics** for crash patterns.
+- ✅ **Warning** Uploading large number of files through the web can be risky. The recommended best practice is to limit your web upload to 500 files max with a 20GB limit only. Alternatively, upload using Unity Version Control and then index your files.
 
 ## 🧯 Troubleshooting
 
@@ -112,7 +113,6 @@ Offers real-time insights into player behavior and automated crash reporting.
 
 ## 🖼️ Screenshots
 
-*(Include these in your final version)*
 
 - Unity Dashboard showing Cloud Build targets  
   ![Unity Dashboard](path/to/unity_dashboard_screenshot.png)  
