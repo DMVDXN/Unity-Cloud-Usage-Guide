@@ -82,7 +82,7 @@ Offers real-time insights into player behavior and automated crash reporting.
 ### Step 4: Set Up Cloud Save  
 1. In Unity, go to `Window > Services > Cloud Save`. 
 
-   (*Beware the current version of Unity in use might change the order of operations in order to complete this process*)
+   (*Beware the current version of Unity in use might change the order of operations in order to complete this process for example in Unity **2022.3.44f1 LTS** services is located in window > general > services*)
 2. Enable the service.  
 3. Example test code:
    ```csharp
@@ -151,7 +151,7 @@ Offers real-time insights into player behavior and automated crash reporting.
 
 - Sample success build email notification  
 
-  <img src= "images/sample_build_noti.png" alt= "Build Success Email" width= "800"> 
+  <img src= "images/sample_build_noti.png" alt= "Build Success Email" width= "600"> 
 
 ---
 
@@ -194,6 +194,60 @@ Unity Cloud Services pricing varies by plan and usage. Below is an approximate s
 > - Additional build minutes and storage can be purchased as add-ons.  
 > - Pricing may vary based on region and contract terms.  
 > - Always refer to the official [Unity Pricing Page](https://unity.com/pricing) for the most current info.
+
+
+# 🎫 What Are Seats in Unity?
+
+A **seat** refers to **a license assigned to one user** — like a “ticket” that gives someone access to Unity’s services and tools under a specific plan (Pro, Plus, Enterprise, etc.).
+
+Think of it this way:
+
+> 🧍‍♂️ One developer working on Unity needs **one seat**.  
+> 👨‍👩‍👧‍👦 A team of 5 developers? You need **5 seats** — one for each user.
+
+---
+
+## 🧩 What Does a Seat Include?
+
+When you assign someone a seat, they get:
+
+- Access to the Unity Editor under the paid plan (Pro, Plus, etc.)
+- Ability to use cloud services (like Build Automation, Remote Config, etc.)
+- Permission to collaborate on Unity projects via version control
+- Access to Unity’s dashboards, usage data, and APIs
+- License to use certain Unity tools and plugins restricted to the paid tier
+
+---
+
+## 💼 Seat Assignment and Management
+
+- You manage seats through the [Unity Dashboard](https://id.unity.com/organizations).
+- Only an **Organization Owner or Manager** can assign/unassign seats.
+- Seats can be reassigned to a different user, but **not shared simultaneously**.
+
+---
+
+## 💰 Seat Pricing Example
+
+| **Plan**     | **Monthly Cost per Seat** | **Annual Cost per Seat** | **Notes**                      |
+|--------------|----------------------------|----------------------------|--------------------------------|
+| Plus         | $15                        | $180                       | One seat per user needed       |
+| Pro          | $40                        | $480                       | Same rule — 1 seat = 1 user    |
+| Enterprise   | Custom                     | Custom                     | Usually negotiated in bulk     |
+
+> **Example:** A 3-person team using Unity Pro would pay:  
+> **3 seats × $40/month = $120/month** or **$1,440/year**
+
+---
+
+## 🛠️ Summary
+
+| **Term**     | **Meaning**                                      |
+|--------------|--------------------------------------------------|
+| **Seat**     | A license assigned to one team member            |
+| **Why it matters** | Determines who can use paid features and cloud tools |
+| **1 user = 1 seat** | You cannot share seats simultaneously between users |
+
 
 ---
 
