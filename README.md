@@ -3,7 +3,7 @@
 > ⚠️ **Editor Compatibility Notice**  
 > The ability to follow the steps in this README may vary depending on the version of the Unity Editor being used.  
 > Before utilizing this guide, your development team must **agree on a specific Unity version** to ensure consistency and avoid compatibility issues.  
-> Features and workflows may differ across versions.
+> Features and workflows may differ across versions. This Readme was focused on unity **2022.3.44f1 LTS** and **6000.0.50f1 LTS**
 
 **Author:** Daniel Onyejiekwe  
 **Date:** June 2025
@@ -138,16 +138,20 @@ Offers real-time insights into player behavior and automated crash reporting.
 
 
 - Unity Dashboard showing Cloud Build targets  
-  ![Unity Dashboard](path/to/unity_dashboard_screenshot.png)  
 
-- In-Editor Service Panel with Cloud Save enabled  
-  ![Cloud Save Panel](path/to/cloud_save_panel_screenshot.png)  
+    <img src="images/cloud_build.png" alt="Unity DevOps cloud build Dashboard Screenshot" width="800">
+
+- In-Editor Service Panel with Cloud Save enabled   
+
+    <img src= "images/cloud_save.png" alt="Cloud Save Panel in unity editor" width= "800">
 
 - Cloud Diagnostics console  
-  ![Cloud Diagnostics](path/to/cloud_diagnostics_screenshot.png)  
+  
+    <img src= "images/cloud_diagnostics.png" alt=" Cloud Diagnostics Panel in unity editor" width= "800">
 
 - Sample success build email notification  
-  ![Build Success Email](path/to/build_success_email.png)  
+
+  <img src= "images/sample_build_noti.png" alt= "Build Success Email" width= "800"> 
 
 ---
 
