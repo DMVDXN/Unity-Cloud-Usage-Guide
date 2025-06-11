@@ -153,6 +153,14 @@ Here's a list of essential Unity services we recommend enabling for cloud-connec
 
 > 🔒 **Tip:** Make sure your Unity project is linked to a Unity organization and that you're signed in to view these services in the dashboard.
 
+*Click the + icon to add shortcuts to any essential unity services*
+
+   <img src="images/unity_shortcut_services.png" alt="Unity services shortcut screenshot" width="400">
+
+---
+
+## Asset Manager
+
 
 ---
 ## 🧯 Troubleshooting
@@ -278,8 +286,6 @@ When you assign someone a seat, they get:
 | **Why it matters** | Determines who can use paid features and cloud tools |
 | **1 user = 1 seat** | You cannot share seats simultaneously between users |
 
-
----
 
 ---
 
