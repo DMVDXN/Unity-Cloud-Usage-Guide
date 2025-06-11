@@ -345,9 +345,9 @@ Use Unity Cloud Asset Manager alongside **Plastic SCM or Gluon** for version con
 | Cloud Save errors          | Check internet connection and ensure Unity Authentication is enabled |
 | Version control conflict   | Use lock rules or communicate with team before overwriting shared assets |
 | Cloud Build stuck at “queued” | Free plan may delay builds during peak times                  |
-| File/path names being too long to cloud upload and check in changes | Make sure the file and path name of your unity project is structured well and uses good naming conventions to fix this issue |
+| File/path names being too long to cloud upload and check in changes | Make sure the file and path name of your unity project is structured well and uses good naming conventions to fix this issue for example shortening the name of your project name to ***"veryreallylongprojectnamehere"*** to ***"simplename"*** to not go over Unity's 200 character path name and file name limit when uploading and download changes in a project|
 
-***File/path names being to long to cloud upload***
+***File/path names being to long to cloud upload and check in changes***
 
    <img src="images/path_name_2_long.png" alt="File/path names being to long to cloud upload" width="800">
 
