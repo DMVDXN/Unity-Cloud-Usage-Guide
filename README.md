@@ -62,7 +62,8 @@ Offers real-time insights into player behavior and automated crash reporting.
 3. Name it (e.g., `UnityCloudDemo`) and click **Create**.
 
 ### Step 2: Activate Unity Services  
-1. In Unity, go to `Window > Services`.  
+1. In Unity, go to `Window > Services`.
+   (Beware the in ***Unity Editor version 2022.3.44F1 LTS*** the order of events is 'Window > general >')
 2. Sign in and create a Project ID if needed.  
 3. Enable:  
    - Cloud Build  
@@ -131,7 +132,13 @@ Please note the prices and terms mentioned in the video apply for the time of th
 
 </details>
 
-Correction: The repositories are deleted after 7 days, not 10 days as mentioned in the video.
+Correction: When you want to delete a repository in Unity The repositories are deleted after 7 days, not 10 days as mentioned in the video.
+
+- When you delete a Unity Cloud (Plastic SCM) repository, it is actually unlinked immediately, but the underlying database is kept around for one week (7 days) 
+
+- This 7-day grace period allows for recovery if deletion was accidental.
+
+- Note that logs related to that repository may still persist for up to two weeks .
 
 ---
 1. Go to **Unity Dashboard > DevOps > Version Control**.
