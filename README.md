@@ -93,11 +93,47 @@ Offers real-time insights into player behavior and automated crash reporting.
 
 ### (Preferred) Option A: Plastic SCM
 
-**Here is a comprehensive starter guide on how to use Unity Version Control (Plastic SCM)**
+**Here is a comprehensive 5 minute starter guide on how to use and what is Unity Version Control (Plastic SCM)**
 
 [![Watch the tutorial on YouTube](https://img.youtube.com/vi/CUdB_otP41Y/0.jpg)](https://www.youtube.com/watch?v=CUdB_otP41Y)
 
+## 🗃️ Getting Started with Unity Version Control
 
+**Here is an official in depth 17 minute guide on how to use Unity Version Control (Plastic SCM)**
+
+[![Watch on YouTube](https://img.youtube.com/vi/9IvXupmgl88/0.jpg)](https://www.youtube.com/watch?v=9IvXupmgl88)
+
+Get an introduction to version control in Unity, how to set up your own repository, invite collaborators, and check in changes. 
+
+Unity Version Control (previously called Plastic SCM) is part of Unity DevOps which provides robust version control and CI/CD solutions in the Unity Cloud, so that you can release more often, catch bugs earlier, try more ideas, and deliver high-quality games. 
+
+Read the Ebook: https://unity.com/resources/best-prac... 
+
+Unity Version Control is available as a part of every Unity subscription. Visit https://unity.com/solutions/version-c... to get started today!
+
+Please note the prices and terms mentioned in the video apply for the time of the recording and may be subject to change. For more info on pricing visit  https://unity.com/products/compare-pl... 
+
+<details>
+  <summary>⏱️ Time Stamps (click to expand)</summary>
+
+  - **0:00** – Intro  
+  - **0:41** – Project setup  
+  - **2:09** – Check in changes  
+  - **2:54** – Gluon  
+  - **4:50** – Invite team members  
+  - **5:53** – Branching strategies  
+  - **7:46** – Branches  
+  - **9:42** – Handling conflicts  
+  - **11:27** – Merge rules  
+  - **13:25** – Locking files  
+  - **14:55** – Monitor usage  
+  - **16:33** – Deleting repositories  
+
+</details>
+
+Correction: The repositories are deleted after 7 days, not 10 days as mentioned in the video.
+
+---
 1. Go to **Unity Dashboard > DevOps > Version Control**.
 
    <img src="images/unity_devops_dash.png" alt="Unity DevOps Dashboard Screenshot" width="800">
