@@ -144,6 +144,76 @@ Correction: The repositories are deleted after 7 days, not 10 days as mentioned 
 
 3. Install the Unity Version Control plugin (Plastic SCM).
 
+---
+# 📂 Plastic SCM vs Gluon - Unity Version Control
+
+This section explains the difference between **Plastic SCM** and **Gluon**, the two version control interfaces available through Unity’s Plastic SCM system.
+
+***Note you can search for "Plastic SCM" and "Gluon" in your windows application panel to find these applications on your device after you have installed and enabled Unity Version Control or Plastic SCM from the editor***
+
+---
+
+## 🔍 Overview
+
+Unity offers two interfaces for using version control:
+
+- **Plastic SCM (Full Interface)** – designed for programmers and advanced users
+- **Gluon** – designed for artists and non-technical team members
+
+Both tools help you manage changes to your Unity project, but they work differently based on your role and workflow needs.
+
+---
+
+## 🧰 Comparison Table
+
+| Feature | **Plastic SCM (Full Interface)** | **Gluon (Simplified Interface)** |
+|--------|----------------------------------|----------------------------------|
+| **Target Users** | Developers & advanced users | Artists, designers, non-tech team members |
+| **Complexity** | Advanced & powerful | Easy & beginner-friendly |
+| **Workflow** | Branch-based, full version control | File-based, simple change tracking |
+| **Branching Support** | ✅ Full branching & merging | ❌ Limited (not user-accessible) |
+| **Conflict Resolution** | Manual merge tools, full control | Basic auto-merge or overwrite |
+| **Partial Checkout** | ✅ Yes (choose specific folders/files) | ✅ Yes (main focus of Gluon) |
+| **Interface Style** | Technical UI (like Git clients) | Visual, drag-and-drop UI |
+| **Scene Merge** | ✅ Yes (merge scenes with tools) | ⚠️ Not recommended (limited control) |
+
+---
+
+## 🧠 Summary
+
+- **Plastic SCM** is best for:
+  - Programmers and technical team members
+  - Projects with complex branching, merging, or lots of code
+  - Advanced control over version history
+
+- **Gluon** is best for:
+  - Artists and designers working on assets
+  - Teams that want a simple workflow with fewer conflicts
+  - Users who prefer not to deal with branches or merges
+
+---
+
+## ✅ Recommendation
+
+| Role | Recommended Tool |
+|------|------------------|
+| Programmer | **Plastic SCM** |
+| Artist / Designer | **Gluon** |
+| Mixed Role | **Plastic SCM** (for full control) |
+
+---
+
+## 📎 Additional Notes
+
+- Both Plastic SCM and Gluon work with Unity projects and can connect to the same cloud repository.
+- You can mix usage in the team—developers use Plastic, artists use Gluon—as long as coordination is maintained.
+
+---
+
+Happy collaborating! 🔧🎨
+
+---
+
 ### Option B: Git
 
 1. Use your Git provider (e.g., GitHub, GitLab).  
@@ -195,8 +265,76 @@ Here's a list of essential Unity services we recommend enabling for cloud-connec
 
 ---
 
-## Asset Manager
+## ☁️ 6. Unity Cloud Asset Manager
 
+**Unity Cloud Asset Manager** is a cloud-based service provided by Unity to help teams **centralize, organize, and share game assets** across multiple projects and users. It lives in the Unity Cloud Dashboard and is designed to streamline collaboration between developers, artists, and designers.
+
+---
+
+### 🧾 What Is Unity Cloud Asset Manager?
+
+Unity Cloud Asset Manager is part of Unity's growing suite of **cloud services** designed to support team workflows outside the Unity Editor.
+
+This service allows teams to:
+
+- Store and access assets **in the cloud**
+- Maintain a **shared asset library**
+- Collaborate on game development by **reusing assets across projects**
+- Manage and preview assets without needing the Unity Editor
+- Control who has access to each asset or folder (role-based permissions)
+
+You can find it by logging into [Unity Dashboard](https://dashboard.unity3d.com), then navigating to **Asset Manager** under your Organization.
+
+---
+
+### ✅ What Does It Offer?
+
+| Feature | Description |
+|--------|-------------|
+| 📁 **Cloud Asset Storage** | Securely store your models, textures, prefabs, audio, animations, and more |
+| 🧩 **Cross-Project Sharing** | Use assets across multiple Unity projects without duplication |
+| 👥 **Team Collaboration** | Designers and developers can upload and retrieve shared assets anytime |
+| 🔍 **Search & Tagging** | Filter by name, type, tags, or metadata to quickly find what you need |
+| 👀 **In-Browser Previews** | View 2D/3D asset previews and info directly in the Unity Dashboard |
+| 🔐 **Permissions Control** | Control who can view, upload, or edit assets at the organization or project level |
+| 🌐 **Web-Based Access** | No Unity Editor required to manage assets — access from any browser |
+
+---
+
+### 🚀 How to Use Unity Cloud Asset Manager
+
+1. **Access It**  
+   - Visit: [https://dashboard.unity3d.com](https://dashboard.unity3d.com)  
+   - Go to your **Organization > Asset Manager**
+
+2. **Upload Assets**  
+   - Click **Upload** or drag-and-drop files  
+   - Add names, tags, and folders to organize your library
+
+3. **Organize Assets**  
+   - Use folders and collections to sort by project, scene, asset type, etc.  
+   - Add metadata like asset type, usage rights, or project purpose
+
+4. **Import Assets Into Unity**  
+   - Inside Unity, open **Package Manager** and install “Asset Manager” (if needed)  
+   - Go to **Window > Asset Manager**  
+   - Browse your cloud library and **import assets directly** into your project
+
+---
+
+### 🧠 Why Use Unity Cloud Asset Manager?
+
+- 🚫 No more duplicate assets across team members’ local machines
+- ⏱️ Save time by avoiding repeated exports/imports
+- 🔄 Build a **shared asset pipeline** that works across projects
+- 🔐 Control asset access while collaborating securely
+- 🌍 Great for remote or distributed teams working in different Unity versions or setups
+
+---
+
+### 📝 Pro Tip
+
+Use Unity Cloud Asset Manager alongside **Plastic SCM or Gluon** for version control. Plastic handles scene/code collaboration, while Asset Manager centralizes your reusable assets and keeps them accessible across all Unity projects.
 
 ---
 ## 🧯 Troubleshooting
@@ -207,6 +345,11 @@ Here's a list of essential Unity services we recommend enabling for cloud-connec
 | Cloud Save errors          | Check internet connection and ensure Unity Authentication is enabled |
 | Version control conflict   | Use lock rules or communicate with team before overwriting shared assets |
 | Cloud Build stuck at “queued” | Free plan may delay builds during peak times                  |
+| File/path names being too long to cloud upload | Make sure the file and path name of your unity project is structured well and uses good naming conventions to fix this issue |
+
+***File/path names being to long to cloud upload***
+
+   <img src="images/path_name_2_long.png" alt="File/path names being to long to cloud upload" width="800">
 
 ## 🖼️ Screenshots
 
@@ -322,9 +465,85 @@ When you assign someone a seat, they get:
 | **Why it matters** | Determines who can use paid features and cloud tools |
 | **1 user = 1 seat** | You cannot share seats simultaneously between users |
 
+---
+
+# 🎮 Unity Team Project - Merging Multiple Scenes
+
+This guide explains how to merge multiple Unity scenes from different team members (in separate projects) into one central Unity project.
 
 ---
 
+## ✅ Overview
+
+Each team member has been working on a different scene in their own Unity project. The goal is to combine all scenes into a single Unity project without losing any assets or functionality.
+
+---
+
+## 🔁 1. Choose a Main Project
+
+Designate one Unity project to be the **main/central project** where all scenes and assets will be merged.
+
+---
+
+## 📦 2. Export Scenes from Other Projects
+
+For each teammate's Unity project:
+
+1. Open the Unity project containing your scene.
+2. In the **Project window**, locate the folder containing:
+   - Your `.unity` scene file
+   - Any models, textures, prefabs, scripts used in the scene
+3. Right-click the folder ➜ Select **Export Package…**
+4. In the export window, check **"Include Dependencies"**
+5. Click **Export** and save the `.unitypackage` file
+
+---
+
+## 💻 3. Import Packages into the Main Project
+
+In the main Unity project:
+
+1. Open the project in Unity
+2. Right-click in the **Project window** ➜ Select **Import Package > Custom Package…**
+3. Choose the `.unitypackage` file from a teammate
+4. Import all assets when prompted
+5. Repeat for all teammates' scenes
+
+---
+
+## 🧹 4. Organize and Rename
+
+After importing:
+
+- Rename each scene clearly (e.g., `LockerRoom.unity`, `MainMenu.unity`, etc.)
+- Store all scenes in `Assets/Scenes/TeamScenes/` or a similar directory
+
+---
+
+## 🔄 5. Scene Navigation (Optional)
+
+To switch between scenes in the game:
+
+Use Unity’s built-in scene manager. Example:
+
+<div style="max-width: 600px; overflow-x: auto;">
+
+<pre><code>
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class SceneSwitcher : MonoBehaviour
+{
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+}
+</code></pre>
+
+</div>
+
+---
 ## 🧾 Conclusion
 
 Unity Cloud Services simplify development workflows by handling builds, syncing data, and managing version control through a unified interface. Based on testing, the setup process is straightforward, but some services may require additional permissions or API calls.
