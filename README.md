@@ -93,13 +93,13 @@ Offers real-time insights into player behavior and automated crash reporting.
 
 ### (Preferred) Option A: Plastic SCM
 
-**Here is a comprehensive 5 minute starter guide on how to use and what is Unity Version Control (Plastic SCM)**
+**Here is a comprehensive 5 minute video starter guide on how to use and what is Unity Version Control (Plastic SCM)**
 
 [![Watch the tutorial on YouTube](https://img.youtube.com/vi/CUdB_otP41Y/0.jpg)](https://www.youtube.com/watch?v=CUdB_otP41Y)
 
 ## 🗃️ Getting Started with Unity Version Control
 
-**Here is an official in depth 17 minute guide on how to use Unity Version Control (Plastic SCM)**
+**Here is an official in depth 17 minute video guide on how to use Unity Version Control (Plastic SCM)**
 
 [![Watch on YouTube](https://img.youtube.com/vi/9IvXupmgl88/0.jpg)](https://www.youtube.com/watch?v=9IvXupmgl88)
 
