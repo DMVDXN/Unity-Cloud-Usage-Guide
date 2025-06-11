@@ -337,6 +337,83 @@ You can find it by logging into [Unity Dashboard](https://dashboard.unity3d.com)
 Use Unity Cloud Asset Manager alongside **Plastic SCM or Gluon** for version control. Plastic handles scene/code collaboration, while Asset Manager centralizes your reusable assets and keeps them accessible across all Unity projects.
 
 ---
+
+## 📦 Package Installation: Unity Cloud Asset Manager
+
+[Package Installation Documentation](https://docs.unity3d.com/Packages/com.unity.asset-manager-for-unity@1.5/manual/installation.html)
+This section explains how to install the **Asset Manager for Unity** package.
+
+> ⚠️ **Important:** Make sure you meet all [prerequisites](https://docs.unity3d.com/Packages/com.unity.asset-manager-for-unity@1.5/manual/prerequisites.html) before installation.
+
+---
+
+### ✅ For Unity Editor 2022.3.51f1, 6000.0.23f1, and Later
+
+1. Open **Unity Hub**.
+2. Sign in with your **Unity ID**.
+3. Open your Unity project.
+4. In the top menu bar, go to:  
+   `Window > Package Manager`
+5. In the top-left corner of the Package Manager window:
+   - Click the dropdown labeled **Packages: In Project**
+   - Select **Unity Registry**
+6. Under the **Services** tab:
+   - Scroll down and select **Asset Manager** under **Content Management**
+7. Click the **Install** button in the top-right corner.
+8. Once installed, the package details will appear on the right panel.
+
+---
+
+### 🕹️ For Older Versions of Unity (22LTS / 23LTS)
+
+1. Open **Unity Hub**.
+2. Sign in with your **Unity ID**.
+3. Open a Unity project using a supported LTS version.
+4. In the top menu bar, go to:  
+   `Window > Package Manager`
+
+      <img src="images/window_pack_man.png" alt="window package manager screenshot" width="800">
+
+5. In the Package Manager window:
+   - Click the **Add (+)** button in the top-left
+   - Select **Add package by name**
+
+      <img src="images/addpackname.png" alt="Add package by name screenshot" width="800">
+
+6. In the dialog that appears:
+   - **Name:** `com.unity.asset-manager-for-unity`
+   - Leave **Version** blank or specify if 
+   
+      <img src="images/asset_manager_code.png" alt="Asset manager package code screenshot" width="800">
+
+7. Click **Add**.
+8. After installation, package details will appear in the right panel.
+
+      <img src="images/in_unity_assetm.png" alt="In unity assest manager panel screenshot" width="800">
+
+---
+
+### 📂 Open the Asset Manager Window
+
+After installation, you can open the Asset Manager panel in Unity by going to:  
+`Window > Asset Manager`
+
+<img src= "images/window_assetman.png" alt="Window > Asset Manager screenshot" width="800">
+
+---
+
+***Now you should be able to see and update all assets that are being used on a specific unity project through the Unity Cloud Asset Manager service in the Unity editor***
+
+***Unity Cloud version of Asset Manager***
+
+<img src= "images/cloud_am.png" alt="Unity Cloud Asset Manager screenshot" width="800">
+
+---
+***Unity Editor version of Asset Manager (2022.3.44.F1 LTS)***
+
+<img src= "images/unity_am.png" alt="Unity Cloud Asset Manager screenshot" width="800">
+
+---
 ## 🧯 Troubleshooting
 
 | Issue                     | Solution                                                        |
