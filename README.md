@@ -91,7 +91,12 @@ Offers real-time insights into player behavior and automated crash reporting.
 
 ## 🔐 Enable Version Control (Step 5)
 
-### Option A: Plastic SCM
+### (Preferred) Option A: Plastic SCM
+
+**Here is a comprehensive starter guide on how to use Unity Version Control (Plastic SCM)**
+
+[![Watch the tutorial on YouTube](https://img.youtube.com/vi/CUdB_otP41Y/0.jpg)](https://www.youtube.com/watch?v=CUdB_otP41Y)
+
 
 1. Go to **Unity Dashboard > DevOps > Version Control**.
 
@@ -115,7 +120,13 @@ Offers real-time insights into player behavior and automated crash reporting.
     ```
 
 ---
+## 📤 How to Share a Unity Project with Someone (2025)
 
+**Here is a video on to share a unity project with someone**
+
+   [![Watch on YouTube](https://img.youtube.com/vi/GzLKfbch3oU/0.jpg)](https://www.youtube.com/watch?v=GzLKfbch3oU)
+
+---
 ## 💡 Best Practices
 
 - ✅ Always enable **Collaborators** in your Unity Organization settings.  
@@ -125,6 +136,25 @@ Offers real-time insights into player behavior and automated crash reporting.
 - ✅ Regularly monitor **Cloud Diagnostics** for crash patterns.
 - ✅ **Warning** Uploading large number of files through the web can be risky. The recommended best practice is to limit your web upload to 500 files max with a 20GB limit only. Alternatively, upload using Unity Version Control and then index your files.
 
+---
+
+## 🚀 Recommended Unity Services & Shortcuts
+
+Here's a list of essential Unity services we recommend enabling for cloud-connected and scalable projects. These links go directly to the relevant Unity dashboards or documentation for faster access.
+
+| Tool / Service     | Shortcut / Documentation Link                                                                 | Purpose                                                                 |
+|--------------------|--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| 🎒 **Asset Manager**   | [Unity Asset Manager](https://docs.unity.com/en-us/cloud/asset-manager) *(navigate to your project → Assets)* | Manage uploaded assets, textures, models, and more                      |
+| ☁️ **Cloud Diagnostics** | [Cloud Diagnostics](https://docs.unity.com/ugs/en-us/manual/cloud-diagnostics/manual/UserReporting/SettingupUserReporting)                    | Track crashes, exceptions, and player issues                            |
+| 📈 **Analytics**        | [Unity Analytics Dashboard](https://docs.unity.com/ugs/manual/analytics/manual/overview)                         | Understand player behavior, retention, and in-game metrics              |
+| 🧠 **Cloud Code**       | [Cloud Code](https://docs.unity.com/ugs/manual/cloud-code/manual/scripts/getting-started)                                    | Run server-side game logic without managing a backend                   |
+| ⚙️ **Remote Config**    | [Remote Config](https://dashboard.unity3d.com/remote-config)                              | Change game settings without pushing new builds                         |
+| 💾 **Cloud Save**       | [Cloud Save](https://docs.unity.com/ugs/en-us/manual/cloud-save/manual)                                    | Save and sync player progress across devices                            |
+
+> 🔒 **Tip:** Make sure your Unity project is linked to a Unity organization and that you're signed in to view these services in the dashboard.
+
+
+---
 ## 🧯 Troubleshooting
 
 | Issue                     | Solution                                                        |
