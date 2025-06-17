@@ -429,7 +429,8 @@ After installation, you can open the Asset Manager panel in Unity by going to:
 | Cloud Save errors          | Check internet connection and ensure Unity Authentication is enabled |
 | Version control conflict   | Use lock rules or communicate with team before overwriting shared assets |
 | Cloud Build stuck at “queued” | Free plan may delay builds during peak times                  |
-| File/path names being too long to cloud upload and check in changes | Make sure the file and path name of your unity project is structured well and uses good naming conventions to fix this issue for example shortening the name of your project name to ***"veryreallylongprojectnamehere"*** to ***"simplename"*** to not go over Unity's 200 character path name and file name limit when uploading and download changes in a project|
+| File/path names being too long to cloud upload and check in changes | Make sure the file and path name of your unity project is structured well and uses good naming conventions to fix this issue for example shortening the name of your project name to ***"veryreallylongprojectnamehere"*** to ***"simplename"*** to not go over Unity's 200 character path name and file name limit when uploading and download changes in a project |
+|An existing checkout operation has locked the workspace ***'Unity Project Name'***. Please wait for the checkout operation to finish. | This just means someone (or the system) is already in the middle of a checkout process in that workspace. Checkouts involve downloading and locking files, so Unity Version Control (Plastic SCM) prevents other actions until it's done — to avoid conflicts or file corruption. Sometimes, it just needs a moment to finish. If another teammate or a process is checking out files, give it a minute or two.
 
 ***File/path names being to long to cloud upload and check in changes***
 
@@ -480,21 +481,30 @@ Unity Cloud Services offer different plans depending on your project's scale and
 
 *In the context of Unity's Build Automation service, "build minutes" refer to the time your project spends being processed by Unity's cloud servers during a build. These minutes are used to calculate your billable usage and determine whether you are exceeding any allocated limits.* 
 
-**Note:** Pricing and limits can change; always check the [official Unity Cloud pricing page](https://unity.com/pricing) for the latest details.
+**Note:** Pricing and limits can change; always check the [official Unity Cloud pricing page](https://unity.com/products/compare-plans/unity-cloud?utm_source=chatgpt.com) for the latest details.
+
+([Official Unity Cloud Documentation](https://docs.unity.com/en-us/cloud/billing/unity-cloud-pricing-model?utm_source=chatgpt.com))
 
 Unity Cloud Services pricing varies by plan and usage. Below is an approximate summary:
 
-| Plan        | Cost (USD)          | Cloud Build Minutes     | Cloud Save Storage          | Notes                              |
-|-------------|---------------------|------------------------|----------------------------|-----------------------------------|
-| **Free**    | $0/month            | 60 build minutes/month | 1 GB storage               | Basic features, ideal for small projects or individual developers |
-| **Plus**    | $15/month           | 120 build minutes/month| 5 GB storage               | Priority build queue, more storage, collaboration for small teams |
-| **Pro**     | $40/month           | 180 build minutes/month| 20 GB storage              | Advanced analytics, higher quotas, ideal for medium to large teams |
-| **Enterprise** | Custom pricing    | Custom                 | Custom                     | Dedicated support, SLAs, compliance, for large-scale production teams |
+## ☁️ Unity Cloud Plans (2025)
+
+Unity Cloud offers multiple plans tailored to different team sizes and needs. These plans provide tools like Cloud Build, Cloud Save, Asset Manager, DevOps, and team collaboration features.
+
+| Plan               | Price               |Assest Manager Storage         | Key Features                        | Bundled with other Unity Plans |
+|--------------------|---------------------|------------------|------------------------------------------------------------|----------------------|
+| **Personal**       | Free                | 10 GB/org        | For individuals or hobbyists. Basic tools, limited access. | Included in Unity Personal |
+| **Pro**            | $60/seat/month      | 50 GB/seat       | Advanced collaboration, CI/CD, asset management.           | Included in Unity Pro |
+| **Enterprise**     | $110/seat/month     | 120 GB/seat      | SLAs, premium support, enterprise-grade controls.          | Included in Enterprise and Industry |
+| **Collaborate**    | $25/seat/month      |      N/A         | Add-on to Unity Enterprise, Unity Industry, or Unity Cloud Enterprise| 
+
+*For extra storage on Unity Cloud, you can subscribe to a pay-as-you-go plan at $0.75 per GB per month.
+In this example, your Unity Cloud organization has five subscriptions to Unity Cloud Pro. Each subscription includes 50 GB of storage. Members of your organization can upload content to Unity Asset Manager up to 250 GB.*
 
 > **Note:** 
 > - Additional build minutes and storage can be purchased as add-ons.  
 > - Pricing may vary based on region and contract terms.  
-> - Always refer to the official [Unity Pricing Page](https://unity.com/pricing) for the most current info.
+> - Always refer to the official [Unity cloud Pricing Page](https://unity.com/products/compare-plans/unity-cloud?utm_source=chatgpt.com) for the most current info.
 
 
 # 🎫 What Are Seats in Unity?
@@ -528,16 +538,16 @@ When you assign someone a seat, they get:
 
 ---
 
-## 💰 Seat Pricing Example
-
-| **Plan**     | **Monthly Cost per Seat** | **Annual Cost per Seat** | **Notes**                      |
-|--------------|----------------------------|----------------------------|--------------------------------|
-| Plus         | $15                        | $180                       | One seat per user needed       |
-| Pro          | $40                        | $480                       | Same rule — 1 seat = 1 user    |
-| Enterprise   | Custom                     | Custom                     | Usually negotiated in bulk     |
+### 💵 Seat Pricing (as of 2025)
+| License Type     | Price per Seat (Annual) | Monthly Option |
+|------------------|-------------------------|----------------|
+| Unity Pro        | $2,200/year             | $200/month     |
+| Unity Industry   | $4,950/year             | $450/month     |
+| Unity Enterprise | Custom pricing          | Custom pricing |
+| Unity Personal   | Free (limited features) | Free (limited features)|
 
 > **Example:** A 3-person team using Unity Pro would pay:  
-> **3 seats × $40/month = $120/month** or **$1,440/year**
+> **3 seats × $200/month = $600/month** or **$7,200/year**
 
 ---
 
