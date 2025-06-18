@@ -700,7 +700,7 @@ You can **subscribe** to real-time updates via:
 - 🧪 Webhooks
 - 📡 RSS/Atom Feed
 
-👉 Visit [status.unity.com](https://status.unity.com) to subscribe or view full incident history.
+👉 Visit [status.unity.com](https://status.unity.com) to subscribe or view full incident history. (edit later)
 
 ---
 
