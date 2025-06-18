@@ -638,6 +638,75 @@ public class SceneSwitcher : MonoBehaviour
 </div>
 
 ---
+# 🛡 Unity Services Status
+
+> **Purpose:**  
+> [Unity Status](https://status.unity.com) is the official dashboard for tracking the real-time health of all Unity online services. It helps developers monitor outages, degradation, or maintenance affecting tools like Unity Ads, Cloud Save, Build Automation, and more.
+
+---
+
+## ✅ Current Status Overview (As of June 17, 2025)
+
+| Unity Service Group             | Status               |
+|--------------------------------|----------------------|
+| Analytics                      | ✅ Operational        |
+| Gaming Services                | ✅ Operational        |
+| Unity DevOps                   | ✅ Operational        |
+| Unity Build Automation         | ✅ Operational        |
+| Unity Version Control          | ✅ Operational        |
+| LiveOps                        | ✅ Operational        |
+| Cloud Content Delivery (CCD)   | ✅ Operational        |
+| Unity Authentication           | ✅ Operational        |
+| Unity Ads & Grow Ads           | ✅ Operational        |
+| Multiplayer                    | ✅ Operational        |
+| Vivox (Voice Comms)            | ✅ Operational        |
+| Unity Dashboard & ID           | ⚠️ Minor Issues       |
+| Asset Store & Documentation    | ✅ Operational        |
+| Asset Manager                  | ✅ Operational        |
+| Unity Cloud Automation         | ✅ Operational        |
+| Unity Source Code Access       | ⚠️ Minor Issues       |
+
+---
+
+## 🔥 Current Incidents
+
+- **Unity Dashboard Access Issues**  
+  ⏱ Ongoing since June 13, 2025  
+  🔍 Status: Under Investigation
+
+- **Source Code Seat Assignment Delay**  
+  ⏱ Ongoing since June 13, 2025  
+  ✅ Status: Being Monitored
+
+---
+
+## 🕓 Past Events & Maintenance
+
+| Date        | Event                                             |
+|-------------|---------------------------------------------------|
+| June 17     | Vivox voice platform server restart               |
+| June 13     | Dashboard latency, Cloud Code errors              |
+| June 12     | Major LiveOps service disruption                  |
+| June 7      | Build Automation scheduled maintenance            |
+| May 26      | Asset Manager maintenance                         |
+
+---
+
+## 🔔 Stay Informed
+
+You can **subscribe** to real-time updates via:
+- 📧 Email
+- 🔔 Slack
+- 🧪 Webhooks
+- 📡 RSS/Atom Feed
+
+👉 Visit [status.unity.com](https://status.unity.com) to subscribe or view full incident history.
+
+---
+
+_Last synced: June 17, 2025_
+
+---
 ## 🧾 Conclusion
 
 Unity Cloud Services simplify development workflows by handling builds, syncing data, and managing version control through a unified interface. Based on testing, the setup process is straightforward, but some services may require additional permissions or API calls.
