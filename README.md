@@ -501,6 +501,8 @@ Unity Cloud offers multiple plans tailored to different team sizes and needs. Th
 *For extra storage on Unity Cloud, you can subscribe to a pay-as-you-go plan at $0.75 per GB per month.
 In this example, your Unity Cloud organization has five subscriptions to Unity Cloud Pro. Each subscription includes 50 GB of storage. Members of your organization can upload content to Unity Asset Manager up to 250 GB.*
 
+<img src="images/unitycloudsc.png" alt="Unity pro cloud purchase Screenshot" width="800">
+
 > **Note:** 
 > - Additional build minutes and storage can be purchased as add-ons.  
 > - Pricing may vary based on region and contract terms.  
@@ -546,8 +548,12 @@ When you assign someone a seat, they get:
 | Unity Enterprise | Custom pricing          | Custom pricing |
 | Unity Personal   | Free (limited features) | Free (limited features)|
 
-> **Example:** A 3-person team using Unity Pro would pay:  
-> **3 seats × $200/month = $600/month** or **$7,200/year**
+> **Example:** A 4-person team using Unity Pro would pay:  
+> *4* seats × $200/month = $600/month** or **(around)$9,600/year**
+
+<img src="images/unity_prosc1.png" alt="Unity pro purchase Screenshot" width="800">
+
+<img src="images/unity_prosc2.png" alt="Unity pro purchase Screenshot" width="800">
 
 ---
 
