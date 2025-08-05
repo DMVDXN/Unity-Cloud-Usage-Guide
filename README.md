@@ -736,6 +736,68 @@ MyUnityProject/
 - 🧪 You can modify and debug the MessagePack source code if needed
 - 🔁 Restart Unity if the package doesn’t show up immediately
 ---
+## ☁️ 7. How to Transfer Full Ownership of a Unity Project (Using Unity Cloud Dashboard)
+
+If you want to **give full control of your Unity project** to someone else — including cloud access, dashboard settings, and Unity Version Control — you can use the **Transfer Project** feature in the Unity Cloud Dashboard.
+
+This will permanently move the project to another person's Unity Organization.
+
+---
+
+### ✅ When to Use This
+
+- You're handing the project over to a new team or client
+- You're switching development devices and accounts
+- You want someone else to manage hosting, DevOps, or billing
+
+---
+
+### 🔁 How to Transfer a Unity Project
+
+#### 🟢 Step 1: Go to the Unity Cloud Dashboard
+
+- Visit: [https://cloud.unity.com/](https://cloud.unity.com/)
+- Select the project you want to transfer
+
+#### 🟡 Step 2: Open Project Settings
+
+1. Click on the **gear icon ⚙️** in the left-hand sidebar
+2. Scroll down to the **Transfer Project** section
+
+#### 🔴 Step 3: Choose the New Organization
+
+1. In the Transfer form, enter the destination **Organization ID**  
+   (The other person must be a member or owner of that org)
+2. Confirm the transfer
+3. The project will be removed from your org and moved to theirs
+
+---
+
+### 📁 What Gets Transferred
+
+| Item                                 | Transferred? |
+|--------------------------------------|--------------|
+| Project assets & metadata            | ✅ Yes       |
+| Cloud builds, storage, & settings    | ✅ Yes       |
+| Unity Version Control (Plastic SCM)  | ✅ Yes       |
+| Dashboard access & admin controls    | ✅ Yes       |
+| Billing responsibility               | ✅ Yes       |
+
+---
+
+### 🧠 Tips
+
+- 🔒 Once transferred, **you lose control** unless the new owner re-invites you
+- ✅ The new org must have DevOps enabled if the project uses Unity Version Control
+- 📦 You can also download and zip the project locally as a backup before transferring
+
+---
+
+### 📎 Link to Official Docs
+
+Unity Transfer Project Docs:  
+[https://docs.unity.com/en-us/cloud/projects/transfer-project](https://docs.unity.com/en-us/cloud/projects/transfer-project)
+---
 # 🛡 Unity Services Status
 
 > **Purpose:**  
