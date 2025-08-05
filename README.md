@@ -161,7 +161,7 @@ This section explains the difference between **Plastic SCM** and **Gluon**, the 
 [![Why PlasticSCM for Unity Version Control](https://img.youtube.com/vi/ZQHFxSXeHz8/0.jpg)](https://youtu.be/ZQHFxSXeHz8)
 
 *Six reasons why PlasticSCM is a solid choice for Unity developers*  
-― from the YouTube video “Why Your Game Should Be Using PlasticSCM For Version …” :contentReference[oaicite:2]{index=2}
+― from the YouTube video “Why Your Game Should Be Using PlasticSCM For Version …”
 ---
 
 ## 🔍 Overview
@@ -647,6 +647,94 @@ public class SceneSwitcher : MonoBehaviour
 
 </div>
 
+---
+## 📦 6. How to Embed Packages in a Unity Project
+
+When collaborating in Unity, embedded packages ensure your team uses the same version of tools/plugins — without needing to install anything externally.
+
+---
+
+### ❓ Why Embed Packages?
+
+By default, Unity installs packages from the Unity Registry or Git URLs — but these are **not included** in version control by default.
+
+Embedding packages directly into your project ensures that:
+
+- ✅ Everyone on your team uses the exact same version of a tool
+- 🛠️ You can modify package code if needed
+- 🚫 No more "missing package" or "package not found" errors on teammates' machines
+- ☁️ Packages are tracked and shared through version control (e.g., Git, Plastic SCM, Unity Version Control)
+
+This is especially important for **custom tools, experimental features, or external packages** your project relies on.
+
+---
+
+### 🔧 What is an Embedded Package?
+
+**Embedded packages** are stored *locally* inside your Unity project’s `/Packages/` folder.
+
+Unlike registry or Git-based packages, embedded ones are:
+
+- Editable
+- Shareable
+- Version-controlled
+
+---
+
+### ✅ How to Embed a Package
+
+1. Open your Unity project folder in File Explorer or Finder.
+2. Go to the `/Packages` directory (next to `/Assets`).
+3. Create a new folder for the package:  
+   Example:
+
+
+---
+
+### 🔍 Real Example: Embedding the MessagePack C# Unity Package
+
+Let’s say your team is using the [MessagePack C# package](https://github.com/neuecc/MessagePack-CSharp) for high-performance serialization:
+
+- Clone or download the repository from GitHub.
+- Locate the Unity-compatible folder (e.g., `src/MessagePack.UnityClient`)
+- Create the embedded folder:
+
+4. Copy the **entire contents** of the MessagePack Unity package into that folder. This should include:
+- `package.json`
+- `Runtime/`
+- `Editor/` (if present)
+5. In Unity, go to **Window > Package Manager**
+6. Click the **+** ➜ **Add package from disk…**
+7. Select the `package.json` from the embedded folder.
+
+Packages/com.neuecc.messagepack/
+- Copy all necessary files and folders from the Unity client version into the new directory.
+- Ensure it includes a valid `package.json` with a name like `"com.neuecc.messagepack"`
+- In Unity:
+- Go to **Window > Package Manager**
+- Click the **+** ➜ **Add package from disk…**
+- Choose `Packages/com.neuecc.messagepack/package.json`
+
+Now MessagePack is embedded and tracked in version control.
+---
+
+### 📁 Example Folder Structure
+
+MyUnityProject/
+├── Assets/
+├── Packages/
+│ ├── manifest.json
+│ └── com.neuecc.messagepack/
+│ ├── package.json
+│ ├── Runtime/
+│ ├── Editor/
+│ └── README.md
+---
+### 💡 Tips
+
+- ✅ Commit the embedded package folder to your version control system
+- 🧪 You can modify and debug the MessagePack source code if needed
+- 🔁 Restart Unity if the package doesn’t show up immediately
 ---
 # 🛡 Unity Services Status
 
