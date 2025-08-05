@@ -158,6 +158,10 @@ This section explains the difference between **Plastic SCM** and **Gluon**, the 
 
 ***Note you can search for "Plastic SCM" and "Gluon" in your windows application panel to find these applications on your device after you have installed and enabled Unity Version Control or Plastic SCM from the editor***
 
+[![Why PlasticSCM for Unity Version Control](https://img.youtube.com/vi/ZQHFxSXeHz8/0.jpg)](https://youtu.be/ZQHFxSXeHz8)
+
+*Six reasons why PlasticSCM is a solid choice for Unity developers*  
+― from the YouTube video “Why Your Game Should Be Using PlasticSCM For Version …” :contentReference[oaicite:2]{index=2}
 ---
 
 ## 🔍 Overview
